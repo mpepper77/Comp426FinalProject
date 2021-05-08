@@ -31,7 +31,15 @@ a{
     margin:auto;
     color: rgb(170, 48, 48);;
     text-align: center;
+    width: 500px;
+    height: 200px;
+        margin: auto;
 
+}
+#game{
+    width: 500px;
+    height: 200px;
+        margin: auto;
 }
 
 #count{
@@ -86,6 +94,8 @@ a{
 #germpic{
     width: 40px;
     height: 60px;
+    top: 150px;
+    left: 500px;
 }
 #germ{
     margin: auto;
@@ -96,7 +106,7 @@ a{
     left: 500px;
     animation: block infinite linear;
     animation-duration: 5s;
-    animation-delay: .05s;
+    animation-delay: .15s;
 }
 #title{
     height: auto;
