@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>COVID Tracker</title>
+    <link href = "node_modules/bulma/css/bulma.css"> 
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div id="root"></div>
+    <div id = "gameRoot">
+        <h1 id= "gameTitle">Avoid the Covid Germs</h1>
+        <p id="instructions">press any key to jump</p>
+    </div>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/axios/dist/axios.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="1069813648192-0897v59vd0647sop9r9c7luninq0nlk9.apps.googleusercontent.com">
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type = "module" src="covid_counter.js"></script>
+<script type = "module" src="game.js"></script>
+<script type = "module" src="news.js"></script>
+<script type = "module" src="vax.js"></script>
+
+</body>
+</html>

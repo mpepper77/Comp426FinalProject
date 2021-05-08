@@ -1,0 +1,106 @@
+form{
+    background-color: lightskyblue;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder ;
+    text-decoration: aliceblue;
+    color: linen;
+    padding-top: 5cm;
+}
+a{
+    font-size: 50px;
+    font-weight: bolder;
+    color: midnightblue;
+}
+#location{
+    border: 2px solid whitesmoke;
+    border-radius: 100px;
+
+}
+#gameRoot{
+    margin:auto;
+    border: 2px solid whitesmoke;
+
+}
+
+#count{
+    color: linen;
+    font-size: xx-large;
+    font-weight: bold;
+    text-align: center;
+}
+
+#player{
+    margin: auto;
+    width: 20px;
+    height: 50px;
+    position:relative;
+    top: 150px;
+}
+.move{
+    animation: jump 0.75s linear;
+}
+#article{
+    background-color: mintcream;
+    width: 500px;
+    align-items: center;
+    align-self: center;
+}
+#newspic{
+    width: 200px;
+    height: 200px;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+@keyframes block{
+    0%{right: -20px}
+    50% {left: 350}
+    100%{left: -2000px}
+}
+#germpic{
+    width: 40px;
+    height: 60px;
+}
+#germ{
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 500px;
+    animation: block infinite linear;
+    animation-duration: 5s;
+    animation-delay: .05s;
+}
+
+button{
+    border: 2px solid whitesmoke;
+    border-radius: 100px;
+    background-color: skyblue;
+    font-style: oblique;
+    color: linen;
+    padding: .5cm;
+    margin: .5cm;
+    position: relative;
+    flex-direction: row;
+  }
+  button:hover{
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: medium;
+    border: 2px solid whitesmoke;
+    border-radius: 100px;
+    background-color: skyblue;
+    padding: .5cm;
+    margin: .5cm;
+    color: linen;
+  }
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightskyblue;
+  }
