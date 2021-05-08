@@ -1,12 +1,13 @@
 export const setupGame = function(){
     const $root = $('#gameRoot');
+    console.log($root);
     const toAppend = `<div class = "game" id = "game">
         <div id = "player">
-        <img src ="public/running person.png" id = "germpic" alt= "germImg">
+        <img src ="running person.png" id = "germpic" alt= "germImg">
 
         </div>
         <div id = "germ">
-        <img src ="public/germ.png" id = "germpic" alt= "germImg">
+        <img src ="germ.png" id = "germpic" alt= "germImg">
 
         </div>
 
@@ -34,7 +35,7 @@ export const renderGame = function(){
     const player = $("#player")[0];
     console.log(player)
     const germ = $("#germ")[0];
-    $(document).keypress(function(e) {
+    $(document).click(function(e) {
         jump(player) 
           // enter pressed
         
