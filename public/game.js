@@ -2,6 +2,7 @@ export const setupGame = function(){
     const $root = $('#gameRoot');
     console.log($root);
     const toAppend = `<div class = "game" id = "game">
+
         <div id = "player">
         <img src ="running person.png" id = "germpic" alt= "germImg">
 

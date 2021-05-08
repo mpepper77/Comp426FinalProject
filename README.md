@@ -11,4 +11,5 @@ and play a game to help you de-stress and practice avoiding covid germs.
 - Autocomplete (10 pts)
 - Avoid the germs game (30 pts)
 - Mobile friendly: game works on phone or computer, page displays on phone or computer (10 pts)
+- Google sign in functionality (3 pts)
 
