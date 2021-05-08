@@ -111,12 +111,21 @@ ul{
     list-style-type: none;
 }
 a{
-    color: teal;
+    color:rgb(235, 205, 149);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 10px;
-    margin: 100px;
-    background-color: white;
-    height: 20px;
+    font-size: 15px;
+
+    background-color: rgb(144, 194, 194);
+    height: 25px;
+}
+li a:hover {
+    background-color: rgb(168, 80, 80);
+
+  }
+li a{
+    display: block;
+    text-align: center;
+    
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
