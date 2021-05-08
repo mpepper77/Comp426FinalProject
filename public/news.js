@@ -15,7 +15,7 @@ export async function handleNewsPress(event){
     });
     const temp = options.data.value;
     console.log(temp);
-    for(let i = 0; i < 20; i++){
+    for(let i = 0; i < 5; i++){
         console.log(temp[i]);
             const toApp = ` <div id = "article">
         <a id= "title" href= "${temp[i].url}" target="_blank"> ${temp[i].name} </a>
@@ -38,7 +38,7 @@ export async function handleNewsPress(event){
   }
   export async function newsButton(){
     const $root = $('#root');
-    const news =  `<div id = "locForm">
+    const news =  `<div id = "news">
       <button type = "button" id = "getNews">Get the Latest News </button>
       </div>`
       $root.append(news);
