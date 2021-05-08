@@ -10,3 +10,5 @@ and play a game to help you de-stress and practice avoiding covid germs.
 - Get the latest case counts by country -- 3rd party API: https://covid-19-data.p.rapidapi.com/country (20 pts)
 - Autocomplete (10 pts)
 - Avoid the germs game (30 pts)
+- Mobile friendly: game works on phone or computer, page displays on phone or computer (10 pts)
+
