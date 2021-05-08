@@ -4,17 +4,22 @@ export async function handleNewsPress(event){
     console.log(location)
     const options = await axios ({
       method: 'GET',
-      url: 'https://newsapi.org/v2/top-headlines?country=us&apiKey=6be8acb89056400f8ca8f5860f583b38'
+      url: 'https://bing-news-search1.p.rapidapi.com/news/search',
+      params: {q: 'coronavirus', safeSearch: 'Off', textFormat: 'Raw', freshness: 'Day'},
+      headers: {
+        'x-bingapis-sdk': 'true',
+        'accept-language': 'english',
+        'x-rapidapi-key': 'c26327474cmsh116fd96a61c2a52p11dc83jsn85d1ce0c9c72',
+        'x-rapidapi-host': 'bing-news-search1.p.rapidapi.com'
+      }
     });
-    //'https://newsapi.org/v2/top-headlines?q=coronavirus&apiKey=6be8acb89056400f8ca8f5860f583b38'
-    const temp = options.data.articles;
+    const temp = options.data.value;
     console.log(temp);
     for(let i = 0; i < 20; i++){
         console.log(temp[i]);
             const toApp = ` <div id = "article">
-        <a id= "title" href= "${temp[i].url}" target="_blank"> ${temp[i].title} </a>
-        <h2 id = "author"> ${temp[i].author}  </h1>
-        <img src ="${temp[i].urlToImage}" id = "newspic" alt= "article photo">
+        <a id= "title" href= "${temp[i].url}" target="_blank"> ${temp[i].name} </a>
+        <img src ="${temp[i].image.thumbnail.contentUrl}" id = "newspic" alt= "article photo">
         <p id = "des"> ${temp[i].description}</p>
         </div>`
   
