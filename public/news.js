@@ -2,10 +2,14 @@ export async function handleNewsPress(event){
     const $root = $('#root');
     const location = $("#getNews").val();
     console.log(location)
-    const options = await axios ({
+    try{
+      const options = await axios ({
       method: 'GET',
       url: 'https://newsapi.org/v2/top-headlines?q=coronavirus&apiKey=6be8acb89056400f8ca8f5860f583b38'
     });
+  }  catch (error) {
+    console.log(error);
+  }
     const temp = options.data.articles;
     console.log(temp);
     for(let i = 0; i < 20; i++){
