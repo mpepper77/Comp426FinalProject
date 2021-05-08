@@ -2,20 +2,17 @@ export async function handleNewsPress(event){
     const $root = $('#root');
     const location = $("#getNews").val();
     console.log(location)
-    try{
-      const options = await axios ({
+    const options = await axios ({
       method: 'GET',
-      url: 'https://newsapi.org/v2/top-headlines?q=coronavirus&apiKey=6be8acb89056400f8ca8f5860f583b38'
+      url: 'https://newsapi.org/v2/top-headlines?country=us&apiKey=6be8acb89056400f8ca8f5860f583b38'
     });
-  }  catch (error) {
-    console.log(error);
-  }
+    //'https://newsapi.org/v2/top-headlines?q=coronavirus&apiKey=6be8acb89056400f8ca8f5860f583b38'
     const temp = options.data.articles;
     console.log(temp);
     for(let i = 0; i < 20; i++){
         console.log(temp[i]);
             const toApp = ` <div id = "article">
-        <a id= "title" href= "${temp[i].url} target="_blank"> ${temp[i].title} </a>
+        <a id= "title" href= "${temp[i].url}" target="_blank"> ${temp[i].title} </a>
         <h2 id = "author"> ${temp[i].author}  </h1>
         <img src ="${temp[i].urlToImage}" id = "newspic" alt= "article photo">
         <p id = "des"> ${temp[i].description}</p>
